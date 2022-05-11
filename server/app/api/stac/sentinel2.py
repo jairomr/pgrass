@@ -1,4 +1,3 @@
-from calendar import c
 from fastapi import APIRouter
 
 from datetime import datetime
@@ -18,7 +17,7 @@ def get_sentinel2():
 
     # Image retrieval parameters
     intersects_dict = dict(type="Point", coordinates=(-55,-14))
-    dates =  f'2022-01-01/{now.strftime("%Y-%m-%d")}'
+    dates =  f'2015-06-01/{now.strftime("%Y-%m-%d")}'
 
     search = catalog.search(
         collections=["sentinel-s2-l2a-cogs"],

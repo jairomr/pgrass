@@ -1,7 +1,7 @@
 from dynaconf import Dynaconf
 from loguru import logger
 
-logger.add("../logs/serve.log")
+logger.add("../logs/jobs.log")
 
 settings = Dynaconf(
     envvar_prefix="PGASS",
